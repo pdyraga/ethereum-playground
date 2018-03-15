@@ -1,5 +1,5 @@
 #!/bin/sh
-rm -rf target
-mkdir target target/abi target/go
-solc --overwrite -o target/abi --abi ../solidity/contracts/SimpleGreeter.sol
-abigen --abi target/abi/SimpleGreeter.abi --pkg main --type SimpleGreeter --out target/go/SimpleGreeter.go
+rm -rf contracts
+mkdir contracts contracts/abi
+solc --overwrite -o contracts/abi --abi ../solidity/contracts/SimpleGreeter.sol
+abigen --abi contracts/abi/SimpleGreeter.abi --pkg contracts --type SimpleGreeter --out contracts/SimpleGreeter.go
