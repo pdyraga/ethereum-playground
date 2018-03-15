@@ -1,5 +1,7 @@
 module.exports = {
   networks: {
+    // $ truffle develop
+    // $ truffle migrate --network development
     development: {
       host: "localhost",
       port: 9545,

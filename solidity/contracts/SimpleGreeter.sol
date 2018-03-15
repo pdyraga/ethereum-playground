@@ -1,9 +1,9 @@
 pragma solidity ^0.4.17;
 
-contract Greeter {
+contract SimpleGreeter {
   string greeting;
     
-  function Greeter(string _greeting) public {
+  function SimpleGreeter(string _greeting) public {
     greeting = _greeting;
   }
     
